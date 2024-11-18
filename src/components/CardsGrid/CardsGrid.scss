@@ -1,0 +1,21 @@
+.main-grid-container {
+  display: grid;
+  justify-self: center;
+  gap: 20px;
+  grid-template-columns: 1fr;
+  padding: 20px 10px;
+}
+
+@media (min-width: 481px) {
+  .main-grid-container {
+    row-gap: 30px;
+    padding: 20px;
+  }
+}
+
+@media (min-width: 768px) {
+  .main-grid-container {
+    grid-template-columns: 1fr 1fr;
+    column-gap: 50px;
+  }
+}

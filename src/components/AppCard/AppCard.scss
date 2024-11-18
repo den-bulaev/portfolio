@@ -1,0 +1,46 @@
+.app-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  padding: 20px 5px 5px;
+  max-width: 200px;
+  border-radius: 20px;
+  box-shadow: 0px 0px 10px rgb(0, 178, 0);
+
+  &_preview {
+    width: 80%;
+  }
+
+  &_image {
+    width: 100%;
+    object-fit: contain;
+  }
+
+  &_title {
+    text-align: center;
+    margin: 0;
+  }
+
+  &_link-container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &_stack {
+    margin-bottom: 20px;
+  }
+}
+
+@media (min-width: 481px) {
+  .app-card {
+    max-width: 350px;
+    box-shadow: 0px 0px 20px rgb(0, 178, 0);
+  }
+}
+
+@media (min-width: 768px) {
+  .app-card {
+    max-width: 350px;
+  }
+}

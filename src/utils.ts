@@ -4,6 +4,7 @@ import cubePreview from "./assets/cube-preview.avif";
 import miamiPreview from "./assets/miami-preview.avif";
 import namuPreview from "./assets/namu-preview.avif";
 import tablePreview from "./assets/table-preview.avif";
+import binancePreview from "./assets/binance-preview.avif";
 
 export const appCards: IAppCard[] = [
   {
@@ -19,6 +20,13 @@ export const appCards: IAppCard[] = [
     linkToDemo: "https://den-bulaev.github.io/table-generator/",
     linkToCode: "https://github.com/den-bulaev/table-generator",
     stack: "react, ts, html, css, vite",
+  },
+  {
+    image: binancePreview,
+    title: "Binance API Integration",
+    linkToDemo: "https://den-bulaev.github.io/smart-business-test-task/",
+    linkToCode: "https://github.com/den-bulaev/Museum",
+    stack: "react, redux toolkit, tanstack table, html, scss",
   },
   {
     image: miamiPreview,

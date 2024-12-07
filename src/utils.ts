@@ -26,7 +26,7 @@ export const appCards: IAppCard[] = [
     title: "Binance API Integration",
     linkToDemo: "https://den-bulaev.github.io/smart-business-test-task/",
     linkToCode: "https://github.com/den-bulaev/Museum",
-    stack: "react, redux toolkit, tanstack table, html, scss",
+    stack: "react, redux toolkit, tanstack table, html, css",
   },
   {
     image: miamiPreview,

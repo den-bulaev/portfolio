@@ -1,9 +1,11 @@
+import { Tooltip as ReactTooltip } from "react-tooltip";
+
 import { IAppCard } from "./interfaces";
 
 import "./AppCard.scss";
 
-const AppCard: React.FC<IAppCard> = (props) => {
-  const { image, title, stack, linkToCode, linkToDemo } = props;
+const AppCard: React.FC<IAppCard & { identifier: string }> = (props) => {
+  const { image, title, stack, linkToCode, linkToDemo, identifier } = props;
 
   return (
     <div className="app-card">
@@ -22,7 +24,18 @@ const AppCard: React.FC<IAppCard> = (props) => {
         </a>
       </div>
 
-      <span className="app-card_stack">{stack}</span>
+      <span
+        className="app-card_stack"
+        data-tooltip-id={`stack-tooltip-${identifier}`}
+      >
+        {stack}
+      </span>
+      <ReactTooltip
+        className="app-card_tooltip"
+        id={`stack-tooltip-${identifier}`}
+        place="bottom"
+        content={stack}
+      />
     </div>
   );
 };

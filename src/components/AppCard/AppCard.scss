@@ -31,6 +31,15 @@
 
   &_stack {
     margin-bottom: 20px;
+    max-width: 80%;
+    overflow-x: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    cursor: pointer;
+  }
+
+  &_tooltip {
+    max-width: 200px;
   }
 }
 
@@ -41,6 +50,10 @@
 
     &_preview {
       height: 150px;
+    }
+
+    &_tooltip {
+      max-width: 300px;
     }
   }
 }

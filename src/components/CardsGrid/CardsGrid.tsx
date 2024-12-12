@@ -12,7 +12,8 @@ const CardsGrid: React.FC<{ cards: IAppCard[] }> = (props) => {
   return (
     <section className="main-grid-container">
       {cards.map((card) => {
-        return <AppCard {...card} key={uuidv4()} />;
+        const identifier = uuidv4();
+        return <AppCard {...card} identifier={identifier} key={identifier} />;
       })}
     </section>
   );

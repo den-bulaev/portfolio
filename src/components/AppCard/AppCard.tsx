@@ -1,3 +1,4 @@
+import { useEffect, useRef, useState } from "react";
 import { Tooltip as ReactTooltip } from "react-tooltip";
 
 import { IAppCard } from "./interfaces";
@@ -6,6 +7,18 @@ import "./AppCard.scss";
 
 const AppCard: React.FC<IAppCard & { identifier: string }> = (props) => {
   const { image, title, stack, linkToCode, linkToDemo, identifier } = props;
+  const stackRef = useRef<HTMLElement | null>(null);
+  const [isTooltip, setIsTooltip] = useState(false);
+
+  useEffect(() => {
+    if (
+      stackRef.current &&
+      stackRef.current.scrollWidth > stackRef.current.clientWidth
+    ) {
+      setIsTooltip(true);
+    }
+
+  }, [stackRef.current]);
 
   return (
     <div className="app-card">
@@ -25,17 +38,20 @@ const AppCard: React.FC<IAppCard & { identifier: string }> = (props) => {
       </div>
 
       <span
-        className="app-card_stack"
+        ref={stackRef}
+        className={`app-card_stack${isTooltip ? " cursor-pointer" : ""}`}
         data-tooltip-id={`stack-tooltip-${identifier}`}
       >
         {stack}
       </span>
-      <ReactTooltip
-        className="app-card_tooltip"
-        id={`stack-tooltip-${identifier}`}
-        place="bottom"
-        content={stack}
-      />
+      {isTooltip && (
+        <ReactTooltip
+          className="app-card_tooltip"
+          id={`stack-tooltip-${identifier}`}
+          place="bottom"
+          content={stack}
+        />
+      )}
     </div>
   );
 };

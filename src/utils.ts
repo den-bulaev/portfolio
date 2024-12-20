@@ -12,7 +12,7 @@ export const appCards: IAppCard[] = [
     title: "Cube Game",
     linkToDemo: "https://den-bulaev-cube-game.netlify.app/",
     linkToCode: "https://github.com/den-bulaev/game-remastered",
-    stack: "react, react-context, ts, html, scss, vite",
+    stack: "react, react-context, ts, html, scss, vite, netlify",
   },
   {
     image: tablePreview,

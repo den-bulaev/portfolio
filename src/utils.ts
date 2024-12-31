@@ -5,6 +5,7 @@ import miamiPreview from "./assets/miami-preview.avif";
 import namuPreview from "./assets/namu-preview.avif";
 import tablePreview from "./assets/table-preview.avif";
 import binancePreview from "./assets/binance-preview.avif";
+import extensionPreview from "./assets/extension-preview.avif";
 
 export const appCards: IAppCard[] = [
   {
@@ -20,6 +21,14 @@ export const appCards: IAppCard[] = [
     linkToDemo: "https://den-bulaev.github.io/table-generator/",
     linkToCode: "https://github.com/den-bulaev/table-generator",
     stack: "react, ts, html, css, vite",
+  },
+  {
+    image: extensionPreview,
+    title: "Published Chrome Extension",
+    linkToDemo:
+      "https://chromewebstore.google.com/detail/autonext-jutsu/apkoedahaboalmgcabppieekaiackdkk?hl=en-US&utm_source=ext_sidebar",
+    linkToCode: "https://github.com/den-bulaev/jut-su-browser-extension",
+    stack: "js, css, chrome API",
   },
   {
     image: binancePreview,

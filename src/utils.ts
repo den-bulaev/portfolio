@@ -6,6 +6,7 @@ import namuPreview from "./assets/namu-preview.avif";
 import tablePreview from "./assets/table-preview.avif";
 import binancePreview from "./assets/binance-preview.avif";
 import extensionPreview from "./assets/extension-preview.avif";
+import puzzlePreview from "./assets/puzzle-preview.avif";
 
 export const appCards: IAppCard[] = [
   {
@@ -43,6 +44,13 @@ export const appCards: IAppCard[] = [
     linkToDemo: "https://den-bulaev.github.io/Miami/",
     linkToCode: "https://github.com/den-bulaev/Miami",
     stack: "html, scss",
+  },
+  {
+    image: puzzlePreview,
+    title: "Tile Puzzle extension (coming soon)",
+    linkToDemo: "",
+    linkToCode: "",
+    stack: "react, vite, ts, html, css, canvas, chrome api",
   },
   {
     image: namuPreview,

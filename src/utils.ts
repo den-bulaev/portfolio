@@ -17,11 +17,11 @@ export const appCards: IAppCard[] = [
     stack: "react, react-context, ts, html, scss, vite, netlify",
   },
   {
-    image: tablePreview,
-    title: "Custom Table Generator",
-    linkToDemo: "https://den-bulaev.github.io/table-generator/",
-    linkToCode: "https://github.com/den-bulaev/table-generator",
-    stack: "react, ts, html, css, vite",
+    image: puzzlePreview,
+    title: "Tile Puzzle Published Chrome Extension",
+    linkToDemo: "https://chromewebstore.google.com/detail/tile-puzzle/daonpfbaalkmmieafnfpbopadndgbinc",
+    linkToCode: "https://github.com/den-bulaev/tile-puzzle-chrome-extension",
+    stack: "react, vite, ts, html, css, canvas, chrome api",
   },
   {
     image: extensionPreview,
@@ -30,6 +30,13 @@ export const appCards: IAppCard[] = [
       "https://chromewebstore.google.com/detail/autonext-jutsu/apkoedahaboalmgcabppieekaiackdkk?hl=en-US&utm_source=ext_sidebar",
     linkToCode: "https://github.com/den-bulaev/jut-su-browser-extension",
     stack: "js, css, chrome API",
+  },
+  {
+    image: tablePreview,
+    title: "Custom Table Generator",
+    linkToDemo: "https://den-bulaev.github.io/table-generator/",
+    linkToCode: "https://github.com/den-bulaev/table-generator",
+    stack: "react, ts, html, css, vite",
   },
   {
     image: binancePreview,
@@ -44,13 +51,6 @@ export const appCards: IAppCard[] = [
     linkToDemo: "https://den-bulaev.github.io/Miami/",
     linkToCode: "https://github.com/den-bulaev/Miami",
     stack: "html, scss",
-  },
-  {
-    image: puzzlePreview,
-    title: "Tile Puzzle extension (coming soon)",
-    linkToDemo: "",
-    linkToCode: "",
-    stack: "react, vite, ts, html, css, canvas, chrome api",
   },
   {
     image: namuPreview,

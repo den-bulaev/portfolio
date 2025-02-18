@@ -4,6 +4,10 @@
   gap: 20px;
   grid-template-columns: 1fr;
   padding: 20px 10px;
+  /* Fixes for mozilla grid below */
+  width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 @media (min-width: 481px) {

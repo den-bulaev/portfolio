@@ -7,6 +7,7 @@ import tablePreview from "./assets/table-preview.avif";
 import binancePreview from "./assets/binance-preview.avif";
 import extensionPreview from "./assets/extension-preview.avif";
 import puzzlePreview from "./assets/puzzle-preview.avif";
+import phaserGame from "./assets/phaser_game.avif";
 
 export const appCards: IAppCard[] = [
   {
@@ -19,7 +20,8 @@ export const appCards: IAppCard[] = [
   {
     image: puzzlePreview,
     title: "Tile Puzzle Published Chrome Extension",
-    linkToDemo: "https://chromewebstore.google.com/detail/tile-puzzle/daonpfbaalkmmieafnfpbopadndgbinc",
+    linkToDemo:
+      "https://chromewebstore.google.com/detail/tile-puzzle/daonpfbaalkmmieafnfpbopadndgbinc",
     linkToCode: "https://github.com/den-bulaev/tile-puzzle-chrome-extension",
     stack: "react, vite, ts, html, css, canvas, chrome api",
   },
@@ -30,6 +32,13 @@ export const appCards: IAppCard[] = [
       "https://chromewebstore.google.com/detail/autonext-jutsu/apkoedahaboalmgcabppieekaiackdkk?hl=en-US&utm_source=ext_sidebar",
     linkToCode: "https://github.com/den-bulaev/jut-su-browser-extension",
     stack: "js, css, chrome API",
+  },
+  {
+    image: phaserGame,
+    title: "Phaser Game",
+    linkToDemo: "https://den-bulaev.github.io/phaser_game/",
+    linkToCode: "https://github.com/den-bulaev/phaser_game",
+    stack: "js, css, phaser3",
   },
   {
     image: tablePreview,

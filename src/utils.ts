@@ -7,7 +7,7 @@ import tablePreview from "./assets/table-preview.avif";
 import binancePreview from "./assets/binance-preview.avif";
 import extensionPreview from "./assets/extension-preview.avif";
 import puzzlePreview from "./assets/puzzle-preview.avif";
-import phaserGame from "./assets/phaser_game.avif";
+import phaserGame from "./assets/game-preview.avif";
 
 export const appCards: IAppCard[] = [
   {

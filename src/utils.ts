@@ -36,7 +36,8 @@ export const appCards: IAppCard[] = [
   {
     image: phaserGame,
     title: "Phaser Game",
-    linkToDemo: "https://den-bulaev.github.io/phaser_game/",
+    linkToDemo:
+      "https://chromewebstore.google.com/detail/the-blendon/hhlldphakdbccegcnflaflfeglieiiam?hl=en-US&utm_source=ext_sidebar",
     linkToCode: "https://github.com/den-bulaev/phaser_game",
     stack: "js, css, phaser3",
   },

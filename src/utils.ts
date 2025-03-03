@@ -35,9 +35,9 @@ export const appCards: IAppCard[] = [
   },
   {
     image: phaserGame,
-    title: "Phaser Game",
+    title: "The Blendon",
     linkToDemo:
-      "https://chromewebstore.google.com/detail/the-blendon/hhlldphakdbccegcnflaflfeglieiiam?hl=en-US&utm_source=ext_sidebar",
+      "https://pixel-of-eternity.itch.io/the-blendon",
     linkToCode: "https://github.com/den-bulaev/phaser_game",
     stack: "js, css, phaser3",
   },

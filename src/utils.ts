@@ -8,8 +8,16 @@ import binancePreview from "./assets/binance-preview.avif";
 import extensionPreview from "./assets/extension-preview.avif";
 import puzzlePreview from "./assets/puzzle-preview.avif";
 import phaserGame from "./assets/game-preview.avif";
+import searchPreview from "./assets/search-preview.avif";
 
 export const appCards: IAppCard[] = [
+  {
+    image: searchPreview,
+    title: "Extended Google Search",
+    linkToDemo: "https://chromewebstore.google.com/detail/extended-google-search/gfkienbdjifbdhablmidgmmgkmdmfbjd",
+    linkToCode: "https://github.com/den-bulaev/extended-google-search",
+    stack: "react, ts, vite, chrome API",
+  },
   {
     image: cubePreview,
     title: "Cube Game",

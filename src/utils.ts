@@ -13,7 +13,7 @@ import searchPreview from "./assets/search-preview.avif";
 export const appCards: IAppCard[] = [
   {
     image: searchPreview,
-    title: "URL Params Injector - SERP manager",
+    title: "Search URL Builder — SERP Manager",
     linkToDemo: "https://chromewebstore.google.com/detail/url-params-injector-serp/gfkienbdjifbdhablmidgmmgkmdmfbjd",
     linkToCode: "https://github.com/den-bulaev/extended-google-search",
     stack: "react, ts, vite, chrome API",

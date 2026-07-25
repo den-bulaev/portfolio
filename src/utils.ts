@@ -13,9 +13,10 @@ import searchPreview from "./assets/search-preview.avif";
 export const appCards: IAppCard[] = [
   {
     image: searchPreview,
-    title: "Search URL Builder — SERP Manager",
-    linkToDemo: "https://chromewebstore.google.com/detail/url-params-injector-serp/gfkienbdjifbdhablmidgmmgkmdmfbjd",
-    linkToCode: "https://github.com/den-bulaev/extended-google-search",
+    title: "GeoBulk — Bulk Geo Search",
+    linkToDemo:
+      "https://chromewebstore.google.com/detail/search-url-builder-%E2%80%94-serp/gfkienbdjifbdhablmidgmmgkmdmfbjd",
+    linkToCode: "https://github.com/den-bulaev/geobulk-search",
     stack: "react, ts, vite, chrome API",
   },
   {
@@ -44,8 +45,7 @@ export const appCards: IAppCard[] = [
   {
     image: phaserGame,
     title: "The Blendon",
-    linkToDemo:
-      "https://pixel-of-eternity.itch.io/the-blendon",
+    linkToDemo: "https://pixel-of-eternity.itch.io/the-blendon",
     linkToCode: "https://github.com/den-bulaev/phaser_game",
     stack: "js, css, phaser3",
   },

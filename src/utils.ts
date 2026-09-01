@@ -15,7 +15,7 @@ export const appCards: IAppCard[] = [
     image: searchPreview,
     title: "GeoBulk — Bulk Geo Search",
     linkToDemo:
-      "https://chromewebstore.google.com/detail/search-url-builder-%E2%80%94-serp/gfkienbdjifbdhablmidgmmgkmdmfbjd",
+      "https://chromewebstore.google.com/detail/geobulk-%E2%80%94-bulk-geo-search/gfkienbdjifbdhablmidgmmgkmdmfbjd",
     linkToCode: "https://github.com/den-bulaev/geobulk-search",
     stack: "react, ts, vite, chrome API",
   },
@@ -84,7 +84,7 @@ export const appCardsChrome: IAppCard[] = [
     image: searchPreview,
     title: "GeoBulk — Bulk Geo Search",
     linkToDemo:
-      "https://chromewebstore.google.com/detail/search-url-builder-%E2%80%94-serp/gfkienbdjifbdhablmidgmmgkmdmfbjd",
+      "https://chromewebstore.google.com/detail/geobulk-%E2%80%94-bulk-geo-search/gfkienbdjifbdhablmidgmmgkmdmfbjd",
     linkToCode: "https://github.com/den-bulaev/geobulk-search",
     stack: "react, ts, vite, chrome API",
   },

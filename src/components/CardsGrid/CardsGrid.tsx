@@ -6,14 +6,23 @@ import { IAppCard } from "../AppCard/interfaces";
 
 import "./CardsGrid.scss";
 
-const CardsGrid: React.FC<{ cards: IAppCard[] }> = (props) => {
-  const { cards } = props;
+const CardsGrid: React.FC<{ cards: IAppCard[]; isChrome: boolean }> = (
+  props,
+) => {
+  const { cards, isChrome } = props;
 
   return (
     <section className="main-grid-container">
       {cards.map((card) => {
         const identifier = uuidv4();
-        return <AppCard {...card} identifier={identifier} key={identifier} />;
+        return (
+          <AppCard
+            {...card}
+            identifier={identifier}
+            isChrome={isChrome}
+            key={identifier}
+          />
+        );
       })}
     </section>
   );

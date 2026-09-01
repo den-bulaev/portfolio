@@ -95,7 +95,7 @@ export const appCardsChrome: IAppCard[] = [
       "https://chromewebstore.google.com/detail/tile-puzzle/daonpfbaalkmmieafnfpbopadndgbinc",
     linkToCode: "https://github.com/den-bulaev/tile-puzzle-chrome-extension",
     stack: "react, vite, ts, canvas, chrome API",
-  }
+  },
 ];
 
 export function getVersion(): string | null {

@@ -30,7 +30,7 @@ const AppCard: React.FC<IAppCard & { identifier: string }> = (props) => {
 
       <div className="app-card_link-container">
         <a href={linkToDemo} target="_blank">
-          View Demo
+          View Product
         </a>
         <a href={linkToCode} target="_blank">
           View Code

@@ -23,6 +23,7 @@ function App() {
       </h1>
       <CardsGrid
         cards={siteVersion === ESiteVersion.CHROME ? appCardsChrome : appCards}
+        isChrome={siteVersion === ESiteVersion.CHROME}
       />
     </main>
   );

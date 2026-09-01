@@ -5,8 +5,11 @@ import { IAppCard } from "./interfaces";
 
 import "./AppCard.scss";
 
-const AppCard: React.FC<IAppCard & { identifier: string }> = (props) => {
-  const { image, title, stack, linkToCode, linkToDemo, identifier } = props;
+const AppCard: React.FC<
+  IAppCard & { identifier: string; isChrome: boolean }
+> = (props) => {
+  const { image, title, stack, linkToCode, linkToDemo, identifier, isChrome } =
+    props;
   const stackRef = useRef<HTMLElement | null>(null);
   const [isTooltip, setIsTooltip] = useState(false);
 
@@ -17,7 +20,6 @@ const AppCard: React.FC<IAppCard & { identifier: string }> = (props) => {
     ) {
       setIsTooltip(true);
     }
-
   }, [stackRef.current]);
 
   return (
@@ -30,7 +32,7 @@ const AppCard: React.FC<IAppCard & { identifier: string }> = (props) => {
 
       <div className="app-card_link-container">
         <a href={linkToDemo} target="_blank">
-          View Product
+          View {isChrome ? "Product" : "Demo"}
         </a>
         <a href={linkToCode} target="_blank">
           View Code
